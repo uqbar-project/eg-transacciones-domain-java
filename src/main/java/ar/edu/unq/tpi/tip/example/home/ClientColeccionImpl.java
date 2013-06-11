@@ -13,11 +13,11 @@ import ar.edu.unq.tpi.tip.example.Client;
 public class ClientColeccionImpl extends CollectionBasedHome<Client> {
 
 	public void init() {
-		this.create(generateClientWithAccounts(new Client(101010101L, "Juan", "1111", "juan@jappmail.com")));
-		this.create(generateClientWithAccounts(new Client(212121212L, "Ragna", "2222", "ragna@jappmail.com")));
-		this.create(generateClientWithAccounts(new Client(3131313131L, "Pepito", "3333", "pepito@jappmail.com")));
-		this.create(generateClientWithAccounts(new Client(40404040L, "Fulano", "44444", "fulano@jappmail.com")));
-		this.create(generateClientWithAccounts(new Client(505055050L, "Mengano", "5555", "mengano@jappmail.com")));
+		this.create(generateClientWithAccounts(new Client(101010101L, "Dave", "1111", "dave@jappmail.com")));
+		this.create(generateClientWithAccounts(new Client(212121212L, "James", "2222", "james@jappmail.com")));
+		this.create(generateClientWithAccounts(new Client(3131313131L, "Bruce", "3333", "bruce@jappmail.com")));
+		this.create(generateClientWithAccounts(new Client(40404040L, "Phil", "44444", "phil@jappmail.com")));
+		this.create(generateClientWithAccounts(new Client(505055050L, "Ozzy", "5555", "ozzy@jappmail.com")));
 	}
 
 	private Client generateClientWithAccounts(final Client client) {

@@ -3,6 +3,10 @@ package ar.edu.unq.tpi.tip.example;
 import java.util.ArrayList;
 import java.util.List;
 
+import net.sf.oval.configuration.annotation.IsInvariant;
+import net.sf.oval.constraint.Length;
+import net.sf.oval.constraint.NotNull;
+
 import org.uqbar.commons.model.Entity;
 import org.uqbar.commons.utils.TransactionalAndObservable;
 
@@ -43,6 +47,9 @@ public class Client extends Entity{
 		this.accounts.remove(account);
 	}
 
+	@Length(min = 4, max = 10)
+	@IsInvariant
+	@NotNull
 	public String getName() {
 		return name;
 	}

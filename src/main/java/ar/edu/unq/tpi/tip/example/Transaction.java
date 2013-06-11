@@ -51,6 +51,12 @@ public class Transaction {
 		this.source = source;
 	}
 	
+	public void clear(){
+		this.amount =null ;
+		this.source = null;
+		this.destination = null;
+	}
+	
 	@Override
 	public String toString() {
 		return "source: "+source + " destiny: " + destination + " amount: "+amount;
